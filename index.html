@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="./index.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <h1 id="title">Calculator</h1>
+        <p id="description">This is a simple calculator.</p>
+        <input type="text" id="result">
+        <div class="btn">
+            <table>
+                <tr>              
+                    <td><button id="clear" onclick="Clear()">C</button></td>
+                    <td><button id="backspace" onclick="Back()">←</button></td>
+                    <td><button id="point" onclick="Solve('.')">.</button></td>
+                    <td><button id="multiply" onclick="Solve('*')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button id="seven" onclick="Solve('7')">7</button></td>
+                    <td><button id="eight" onclick="Solve('8')">8</button></td>
+                    <td><button id="nine" onclick="Solve('9')">9</button></td>
+                    <td><button id="divide" onclick="Solve('/')">/</button></td>
+                </tr>
+                <tr>
+                    <td><button id="four" onclick="Solve('4')">4</button></td>
+                    <td><button id="five" onclick="Solve('5')">5</button></td>
+                    <td><button id="six" onclick="Solve('6')">6</button></td>
+                    <td><button id="subtract" onclick="Solve('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button id="1" onclick="Solve('1')">1</button></td>
+                    <td><button id="2" onclick="Solve('2')">2</button></td>
+                    <td><button id="3" onclick="Solve('3')">3</button></td>
+                    <td><button id="add" onclick="Solve('+')">+</button></td>
+                </tr>
+
+                <tr>
+                    <td><button id="one" onclick="Solve('0')">0</button></td>
+                    <td><button id="two" onclick="Solve('00')">00</button></td>
+                    <td><button id="equal" onclick="Result()">=</button></td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>

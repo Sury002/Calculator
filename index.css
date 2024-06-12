@@ -1,0 +1,82 @@
+/* CSS for Calculator */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+#title {
+    text-align: center;
+}
+
+#description {
+    text-align: center;
+}
+
+#result {
+    width: calc(100% - 40px);
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn table {
+    width: 100%;
+}
+
+.btn table tr td {
+    padding: 5px;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Include border in button dimensions */
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+button:active {
+    background-color: #bbb;
+}
+
+/* Styling specific buttons */
+#clear {
+    color: red;
+}
+
+#percentage,
+#backspace,
+#divide,
+#multiply,
+#subtract,
+#add {
+    color: blue;
+}
+
+#equal {
+    color: white;
+    background-color: rgb(16, 128, 219);
+    width: calc(100% * 2.2);
+}
